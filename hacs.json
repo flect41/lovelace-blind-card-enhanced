@@ -1,0 +1,8 @@
+{
+  "name": "Lovelace Blind Card Enhanced",
+  "filename": "lovelace-blind-card-enhanced.js",
+  "render_readme": true,
+  "homeassistant": "2023.0.0",
+  "content_in_root": true,
+  "type": "lovelace"
+}
