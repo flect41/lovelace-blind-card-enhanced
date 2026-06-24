@@ -821,3 +821,12 @@ class LovelaceBlindCardEnhanced extends HTMLElement {
 }
 
 customElements.define("lovelace-blind-card-enhanced", LovelaceBlindCardEnhanced);
+
+window.customCards = window.customCards || [];
+window.customCards.push({
+  type: "lovelace-blind-card-enhanced",
+  name: "Blind Card Enhanced",
+  preview: true,
+  description: "A modern visual blind/cover control card with drag control, styles, colours, and optional pull cord.",
+  documentationURL: "https://github.com/flect41/lovelace-blind-card-enhanced",
+});
