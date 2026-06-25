@@ -86,3 +86,52 @@ entities:
   - entity: cover.lounge_right_blind
     name: Lounge Right
     style: sliding_right
+```
+
+---
+
+## Installation
+
+### HACS
+
+1. Open HACS in Home Assistant
+2. Search for **Lovelace Blind Card Enhanced**
+3. Download the card
+4. Refresh your browser
+
+The card is available in the default HACS repository list. You do not need to add it as a custom repository.
+
+---
+
+### Manual
+
+1. Copy `lovelace-blind-card-enhanced.js` into:
+
+```text
+/config/www/
+```
+
+2. Add it to your Lovelace resources:
+
+```yaml
+resources:
+  - url: /local/lovelace-blind-card-enhanced.js
+    type: module
+```
+
+3. Refresh your browser.
+
+---
+
+## Attribution
+
+This project is based on:  
+https://github.com/tungmeister/hass-blind-card
+
+Original concept and base implementation by **tungmeister**.
+
+---
+
+## License
+
+Apache-2.0, same as the original project.
