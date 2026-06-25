@@ -269,12 +269,12 @@ class LovelaceBlindCardEnhanced extends HTMLElement {
           const metrics = _this.getTrackMetrics(picture);
 
           const sheetOverlap = 1;
-          slide.style.left = (metrics.left + sheetOverlap) + "px";
-          slide.style.width = `calc(100% - ${metrics.left + metrics.right + (sheetOverlap * 2)}px)`;
+          slide.style.left = metrics.left + sheetOverlap + "px";
+          slide.style.width = `calc(100% - ${metrics.left + metrics.right + sheetOverlap * 2}px)`;
           slide.style.top = metrics.min + "px";
 
-          picker.style.left = (metrics.left + sheetOverlap) + "px";
-          picker.style.width = `calc(100% - ${metrics.left + metrics.right + (sheetOverlap * 2)}px)`;
+          picker.style.left = metrics.left + sheetOverlap + "px";
+          picker.style.width = `calc(100% - ${metrics.left + metrics.right + sheetOverlap * 2}px)`;
           picker.style.height = metrics.pickerHeight + "px";
         };
 
@@ -500,7 +500,9 @@ class LovelaceBlindCardEnhanced extends HTMLElement {
         .sc-blind-pull-stem {
           position: absolute;
           left: 50%;
+          top: 20px;
           width: 2px;
+          height: 12px;
           transform: translateX(-50%);
           z-index: 6;
           pointer-events: none;
@@ -510,6 +512,7 @@ class LovelaceBlindCardEnhanced extends HTMLElement {
         .sc-blind-pull {
           position: absolute;
           left: 50%;
+          top: 32px;
           width: 12px;
           height: 12px;
           border-radius: 50%;
@@ -759,12 +762,12 @@ class LovelaceBlindCardEnhanced extends HTMLElement {
       const metrics = _this.getTrackMetrics(picture);
       const sheetOverlap = 1;
 
-      slide.style.left = (metrics.left + sheetOverlap) + "px";
-      slide.style.width = `calc(100% - ${metrics.left + metrics.right + (sheetOverlap * 2)}px)`;
+      slide.style.left = metrics.left + sheetOverlap + "px";
+      slide.style.width = `calc(100% - ${metrics.left + metrics.right + sheetOverlap * 2}px)`;
       slide.style.top = metrics.min + "px";
 
-      picker.style.left = (metrics.left + sheetOverlap) + "px";
-      picker.style.width = `calc(100% - ${metrics.left + metrics.right + (sheetOverlap * 2)}px)`;
+      picker.style.left = metrics.left + sheetOverlap + "px";
+      picker.style.width = `calc(100% - ${metrics.left + metrics.right + sheetOverlap * 2}px)`;
       picker.style.height = metrics.pickerHeight + "px";
 
       if (roller) {
