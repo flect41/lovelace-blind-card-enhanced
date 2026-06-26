@@ -237,7 +237,7 @@ class LovelaceBlindCardEnhanced extends HTMLElement {
                   <div class="sc-blind-selector-picker"></div>
                   ${
                     showPull
-                      ? '<div class="sc-blind-pull-stem"></div><div class="sc-blind-pull"></div>'
+                      ? '<div class="sc-blind-pull-stem" style="left:50%; top:20px; height:12px;"></div><div class="sc-blind-pull" style="left:50%; top:32px;"></div>'
                       : ""
                   }
                   <div class="sc-drag-indicator"></div>
@@ -725,8 +725,8 @@ class LovelaceBlindCardEnhanced extends HTMLElement {
         }
       `;
 
-      this.card.appendChild(allBlinds);
       this.appendChild(style);
+      this.card.appendChild(allBlinds);
     }
 
     entities.forEach((entity) => {
